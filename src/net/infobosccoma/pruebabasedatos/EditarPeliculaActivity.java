@@ -1,10 +1,8 @@
-package net.proyectosbeta.pruebabasedatos;
+package net.infobosccoma.pruebabasedatos;
 
 import java.io.File;
 
-import net.proyectosbeta.pruebabasedatos.basedatos.DatabaseHandler;
-import net.proyectosbeta.pruebabasedatos.modelos.Pelicula;
-import net.proyectosbeta.pruebabasedatos.utilitarios.Mensaje;
+import net.proyectosbeta.pruebabasedatos.R;
 
 import android.app.Activity;
 import android.app.AlertDialog;

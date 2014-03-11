@@ -1,8 +1,9 @@
-package net.proyectosbeta.pruebabasedatos.utilitarios;
+package net.infobosccoma.pruebabasedatos;
 
 import java.io.File;
 
 import net.proyectosbeta.pruebabasedatos.R;
+
 
 import android.content.Context;
 import android.database.Cursor;

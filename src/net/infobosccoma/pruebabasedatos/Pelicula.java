@@ -1,4 +1,4 @@
-package net.proyectosbeta.pruebabasedatos.modelos;
+package net.infobosccoma.pruebabasedatos;
 
 import java.io.Serializable;
 

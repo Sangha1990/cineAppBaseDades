@@ -1,4 +1,4 @@
-package net.proyectosbeta.pruebabasedatos.utilitarios;
+package net.infobosccoma.pruebabasedatos;
 
 import android.content.Context;
 import android.widget.Toast;

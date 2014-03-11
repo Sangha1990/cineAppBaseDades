@@ -1,6 +1,5 @@
-package net.proyectosbeta.pruebabasedatos.basedatos;
+package net.infobosccoma.pruebabasedatos;
 
-import net.proyectosbeta.pruebabasedatos.modelos.Pelicula;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;

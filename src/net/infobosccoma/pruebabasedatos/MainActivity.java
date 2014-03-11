@@ -1,9 +1,6 @@
-package net.proyectosbeta.pruebabasedatos;
+package net.infobosccoma.pruebabasedatos;
 
-import net.proyectosbeta.pruebabasedatos.basedatos.DatabaseHandler;
-import net.proyectosbeta.pruebabasedatos.modelos.Pelicula;
-import net.proyectosbeta.pruebabasedatos.utilitarios.ImagenAdapter;
-
+import net.proyectosbeta.pruebabasedatos.R;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -21,13 +18,12 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
-	
+
 	private DatabaseHandler baseDatos;
 	private ImagenAdapter cursorAdapter;
 	private ListView listViewPelicula;
 	private Button botonAgregarPelicula;
 
-	
 	private int CODIGO_RESULT_EDITAR_PELICULA = 0;
 
 	@Override
@@ -36,26 +32,21 @@ public class MainActivity extends Activity {
 
 		setContentView(R.layout.activity_main);
 
-		
 		listViewPelicula = (ListView) findViewById(R.id.listViewPelicula);
 		botonAgregarPelicula = (Button) findViewById(R.id.botonAgregarPelicula);
 
-		
 		botonAgregarPelicula.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				
+
 				editarPelicula(0);
 			}
 		});
 
-		
 		recuperarTodasPelicula();
 
-		
 		registerForContextMenu(listViewPelicula);
 	}
 
-	
 	@Override
 	public void onCreateContextMenu(ContextMenu menu, View v,
 			ContextMenuInfo menuInfo) {
@@ -65,7 +56,6 @@ public class MainActivity extends Activity {
 		inflater.inflate(R.menu.opciones_pelicula, menu);
 	}
 
-	
 	@Override
 	public boolean onContextItemSelected(android.view.MenuItem item) {
 		AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item
@@ -101,8 +91,8 @@ public class MainActivity extends Activity {
 
 			Cursor cursor = baseDatos.obtenerTodasPelicula();
 
-			String[] from = new String[] { "nomPeli", "director", "dataEstrena",
-					"ruta_imagen" };
+			String[] from = new String[] { "nomPeli", "director",
+					"dataEstrena", "ruta_imagen" };
 
 			int[] to = new int[] { R.id.TextViewNomPeli, R.id.TextViewDirector,
 					R.id.TextViewDataEstrena, R.id.thumb_pelicula, };
@@ -131,10 +121,12 @@ public class MainActivity extends Activity {
 						EditarPeliculaActivity.class);
 
 				actividad_editarPelicula.putExtra("id", p_id);
-				actividad_editarPelicula.putExtra("nomPeli", pelicula.getNomPeli());
+				actividad_editarPelicula.putExtra("nomPeli",
+						pelicula.getNomPeli());
 				actividad_editarPelicula.putExtra("director",
 						pelicula.getDirector());
-				actividad_editarPelicula.putExtra("dataEstrena", pelicula.getDataEstrena());
+				actividad_editarPelicula.putExtra("dataEstrena",
+						pelicula.getDataEstrena());
 				actividad_editarPelicula.putExtra("ruta_imagen",
 						pelicula.getRutaImagen());
 
@@ -151,7 +143,6 @@ public class MainActivity extends Activity {
 		}
 	}
 
-	
 	private void eliminarPelicula(int id_pelicula) {
 
 		AlertDialog.Builder mensaje_dialogo = new AlertDialog.Builder(this);
