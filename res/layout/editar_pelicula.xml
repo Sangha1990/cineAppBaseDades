@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget0"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- Inicia el ScrollView -->
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <EditText
+            android:id="@+id/editTextNomPeli"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imagenPelicula"
+            android:layout_x="28dp"
+            android:layout_y="149dp"
+            android:ems="10"
+            android:hint="@string/editTextNomPeli"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextDirector"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editTextNomPeli"
+            android:layout_x="29dp"
+            android:layout_y="282dp"
+            android:ems="10"
+            android:hint="@string/editTextDirector"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/botonLimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/botonGuardar"
+            android:layout_alignTop="@+id/botonGuardar"
+            android:layout_toRightOf="@+id/botonGuardar"
+            android:layout_x="166dp"
+            android:layout_y="408dp"
+            android:text="@string/botonLimpiar" />
+
+        <ImageView
+            android:id="@+id/imagenPelicula"
+            android:layout_width="107dp"
+            android:layout_height="107dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_launcher" />
+
+        <Button
+            android:id="@+id/botonAgregarImagenPelicula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imagenPelicula"
+            android:text="@string/agregarImagenPelicula" />
+
+        <Button
+            android:id="@+id/botonGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/botonGuardar" />
+
+        <EditText
+            android:id="@+id/editTextDataEstrena"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editTextDirector"
+            android:layout_x="36dp"
+            android:layout_y="349dp"
+            android:ems="10"
+            android:hint="@string/editTextDataEstrena"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</AbsoluteLayout>

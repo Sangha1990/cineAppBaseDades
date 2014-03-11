@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+        android:id="@+id/menu_contextual_editar_pelicula"
+    	android:title="@string/opcion_editar_pelicula">
+    </item>
+	<item 
+	    android:id="@+id/menu_contextual_eliminar_pelicula"
+    	android:title="@string/opcion_eliminar_pelicula">
+	</item>
+</menu>

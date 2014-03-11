@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dip" >
+
+    <ImageView
+        android:id="@+id/thumb_pelicula"
+        android:layout_width="75dip"
+        android:layout_height="75dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/TextViewNomPeli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/thumb_pelicula"
+        android:layout_toRightOf="@+id/thumb_pelicula"
+        android:text="TextViewNomPeli" />
+
+    <TextView
+        android:id="@+id/TextViewDataEstrena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextViewDirector"
+        android:layout_below="@+id/TextViewDirector"
+        android:textStyle="italic"
+        android:textColor="#00FF00"
+        android:text="TextViewDataEstrena" />
+
+    <TextView
+        android:id="@+id/TextViewDirector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextViewNomPeli"
+        android:layout_below="@+id/TextViewNomPeli"
+        android:text="TextViewDirector" />
+
+</RelativeLayout>

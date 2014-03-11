@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Personas</string>
+    <string name="crear_pelicula">Crear Pelicula</string>
+    <string name="editTextNomPeli">Nombre de Pelicula</string>
+    <string name="editTextDirector">Director</string>
+    <string name="editTextDataEstrena">Data Estrena</string>
+    <string name="agregarImagenPelicula">Agregar Imagen</string>
+    <string name="botonGuardar">Guardar</string>
+    <string name="botonLimpiar">Limpiar</string>
+    <string name="opcion_editar_pelicula">Editar</string>
+    <string name="opcion_eliminar_pelicula">Eliminar</string>
+</resources>
